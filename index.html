@@ -14,12 +14,37 @@
 </head>
 
 <body>
+  <script>
+<!--
+/*
+Random link button- By JavaScript Kit (http://javascriptkit.com)
+Over 300+ free scripts!
+This credit MUST stay intact for use
+*/
+
+//specify random links below. You can have as many as you want
+var randomlinks=new Array()
+
+randomlinks[0]="http://freewarejava.com"
+randomlinks[1]="http://javascriptkit.com"
+randomlinks[2]="http://dynamicdrive.com"
+randomlinks[3]="http://cnn.com"
+randomlinks[4]="http://www.geocities.com"
+
+-->
+function randomlink(){
+window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+}
+//-->
+</script>
+
+
   <br /><br /><br /> 
 
 <h3 class="TU">Particle Button & Glow effect</h3>
 <br /><br /><br />
 <p>
-  <button id="button" class="BT-OH-BR-R6-NF-FH-FP-TU-PT">
+  <button id="button" class="BT-OH-BR-R6-NF-FH-FP-TU-PT" onclick='randomlink()">
       <canvas id="canvas"></canvas> 
       <hover></hover>
       <span>Hover for Awesomeness</span>
